@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="formulario.html">Registrate</a>
+    </nav>
+    <hr>
+    <form action="https://httpbin.org/post" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" placeholder="nombre" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" placeholder="apellido" id="apellido" name="apellido" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number"  placeholder="edad" id="edad" name="edad" required><br><br>
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email"  placeholder="correo electrónico" id="email" name="email" required><br><br>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password"  placeholder="contraseña" id="contrasena" name="contrasena" required><br><br>
+
+        <label for="provincia">Selecciona tu provincia de residencia:</label>
+            <br>
+            <select id="provincia" name="provincia" required>
+                <option value="" disabled selected>-- Elige una provincia --</option>
+                
+                <option value="La romana">La Romana</option>
+                <option value="San Pedro">San Pedro</option>
+                <option value="Iiguey">Iiguey</option>
+                <option value="Santo Domingo">Santo Domingo</option>
+                <option value="Nisibon">Nisibon</option>
+            </select><br><br>
+
+        <label for="estudiante">Eres estudiante</label><br>
+        <input type="radio" id="estudiante" name="estudiante" value="estudiante" required checked>
+        <label for="estudiante">Si</label><br>
+        <input type="radio" id="no-estudiante" name="estudiante" value="no-estudiante" required>
+        <label for="estudiante">No</label><br><br>
+
+        <label for="comentarios"><strong>Déjanos tus comentarios o sugerencias:</strong></label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí..."></textarea><br><br>
+        
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos"><em> Acepto los términos y condiciones</em></label><br><br>
+
+
+        <input type="submit" value="Registrarse">
+        <input type="reset" value="Restablecer">
+    </form>
+</body>
+</html>
