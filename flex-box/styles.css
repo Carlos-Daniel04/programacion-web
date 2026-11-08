@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+
+.contenedor{
+    width: 500px;
+    height: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border: 10px solid #2c3e50;
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    /* display:-webkit-flex; que hace esto? es para compatibilidad con navegadores antiguos */
+    /* diplay:-ms-flexbox; que hace esto? es para compatibilidad con navegadores antiguos */
+
+    /*display: flex; para que esto? es para crear un contenedor flexible */
+    /*flex-direction: row;para que esto? es para definir la dirección del flexbox */
+    /* flex-wrap: que hace esto y su logica? es para permitir que los elementos se envuelvan en múltiples líneas si no caben en una sola,
+    sintaxis: flex-wrap: wrap | nowrap | wrap-reverse;
+    que hace cada una? wrap: los elementos se envuelven en múltiples líneas,
+    nowrap: los elementos no se envuelven,
+    wrap-reverse: los elementos se envuelven en múltiples líneas en orden inverso */
+
+    /* justify-content: que hace esto y su logica? es para alinear los elementos en el eje principal del flexbox
+    sintaxis: justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+    que hace cada una? flex-start: los elementos se alinean al inicio del eje principal,
+    flex-end: los elementos se alinean al final del eje principal,
+    center: los elementos se alinean al centro del eje principal,
+    space-between: los elementos se distribuyen con espacio entre ellos,
+    space-around: los elementos se distribuyen con espacio alrededor de ellos,
+     space-evenly: los elementos se distribuyen con espacio uniforme entre ellos */
+
+    /* align-items: que hace esto y su logica? es para alinear los elementos en el eje secundario del flexbox.
+    sintaxis: align-items: flex-start | flex-end | center | baseline | stretch;
+    que hace cada una? flex-start: los elementos se alinean al inicio del eje secundario,
+    flex-end: los elementos se alinean al final del eje secundario,
+    center: los elementos se alinean al centro del eje secundario,
+    baseline: los elementos se alinean por la línea de base,
+    stretch: los elementos se estiran para llenar el eje secundario */
+
+    /* align-content: que hace esto y su logica? es para alinear las líneas de elementos en el eje secundario del flexbox.
+    sintaxis: align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+    que hace cada una? flex-start: las líneas de elementos se alinean al inicio del eje secundario,
+    flex-end: las líneas de elementos se alinean al final del eje secundario,
+    center: las líneas de elementos se alinean al centro del eje secundario,
+    space-between: las líneas de elementos se distribuyen con espacio entre ellas,
+    space-around: las líneas de elementos se distribuyen con espacio alrededor de ellas,
+    stretch: las líneas de elementos se estiran para llenar el eje secundario */
+}
+
+.elemento{
+    color: #fff;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background: #e67e22;
+    text-align: center;
+
+    /* flex-grow: 1; es para que el elemento se expanda para llenar el espacio disponible */
+
+    /* flex-shrink: 1; es para que el elemento se contraiga si es necesario */
+
+    /* flex-basis: 0; es para que el elemento no tenga un tamaño base */
+
+    /* flex: 1 1 0; es una abreviación de flex-grow, flex-shrink y flex-basis */
+
+    /* order: 0; es para especificar el orden que queremos de los elementos en el flexbox */
+
+
+    /* align-self: que hace esto y su logica? es para alinear un elemento específico en el eje secundario del flexbox.
+    sintaxis: align-self: auto | flex-start | flex-end | center | baseline | stretch;
+    que hace cada una? auto: el elemento hereda la alineación del contenedor,
+    flex-start: el elemento se alinea al inicio del eje secundario,
+    flex-end: el elemento se alinea al final del eje secundario,
+    center: el elemento se alinea al centro del eje secundario,
+    baseline: el elemento se alinea por la línea de base,
+    stretch: el elemento se estira para llenar el eje secundario */
+
+}
